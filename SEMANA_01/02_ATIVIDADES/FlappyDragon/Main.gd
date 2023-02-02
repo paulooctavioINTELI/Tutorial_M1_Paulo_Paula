@@ -1,9 +1,9 @@
 extends Node # instancia a classe Node2D
 
-var status = 1
-var vscore = 0
-var x = 1.5 
-var y = 1.5 
+var status = 1 # Armazena um valor binario indicando se o player está jogando
+var vscore = 0 # Armazena o score do player
+var x = 5 # Armazena a velocidade horizontal do player
+var y = 1.5 # Armazena a gravidade
 
 # executa essa função ao carregar o jogo
 func _ready():
