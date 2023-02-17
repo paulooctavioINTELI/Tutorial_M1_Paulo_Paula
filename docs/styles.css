@@ -44,7 +44,7 @@ h1 {
     align-items: center;
     min-width: 200px;
     min-height: 20px;
-    transition: 300ms;
+    transition: 1000ms;
 }
 
 #item:hover {
@@ -53,9 +53,11 @@ h1 {
     color: rgb(64, 64, 64);
     width: 500px;
     min-height: 300px;
+    min-width: 500px;
 }
 
 #item:hover #info{
+    transition: 1s;
     display: flex;
     flex-direction: column;
 }
@@ -66,6 +68,7 @@ h1 {
 }
 
 #info {
+    transition: 1s;
     display: none;
     margin-top: 20px;
 }
