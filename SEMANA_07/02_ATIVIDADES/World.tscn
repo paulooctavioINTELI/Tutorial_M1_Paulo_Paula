@@ -1,0 +1,270 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Obstacle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Rope.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Player2.gd" type="Script" id=4]
+[ext_resource path="res://a59b735200362f91e6735b2abcb787b2.png" type="Texture" id=6]
+[ext_resource path="res://World.gd" type="Script" id=7]
+
+[sub_resource type="StreamTexture" id=2]
+flags = 4
+load_path = "res://.import/labirinto.png-87413b22d8bd577e0b5049652922e266.stex"
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 17.25, 26.75 )
+
+[node name="World" type="YSort"]
+script = ExtResource( 7 )
+
+[node name="Obstacle14" parent="." instance=ExtResource( 1 )]
+position = Vector2( 530, 235 )
+scale = Vector2( 0.711271, 0.974457 )
+
+[node name="Labirinto" type="Sprite" parent="."]
+visible = false
+position = Vector2( 512.084, 277.284 )
+rotation = 1.57864
+scale = Vector2( 1.06308, 1.87986 )
+texture = SubResource( 2 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 380, 560 )
+
+[node name="AnimatedSprite" parent="Player" index="0"]
+modulate = Color( 0.694118, 0.980392, 1, 1 )
+position = Vector2( -1, -16 )
+frame = 0
+
+[node name="CollisionShape2D" parent="Player" index="1"]
+position = Vector2( 0, -11.1111 )
+
+[node name="Light2D" parent="Player" index="3"]
+scale = Vector2( 1, 1.00465 )
+color = Color( 0.472656, 0.925842, 1, 1 )
+
+[node name="Player2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 513, 547 )
+script = ExtResource( 4 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 507, 306 )
+current = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+
+[node name="Obstacle" parent="." instance=ExtResource( 1 )]
+position = Vector2( 747, 506 )
+scale = Vector2( 0.8, 0.919999 )
+
+[node name="Obstacle2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 236, 394 )
+rotation = -3.14761
+scale = Vector2( 0.883205, 0.824426 )
+
+[node name="Obstacle3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 472, 329 )
+rotation = 0.0635256
+scale = Vector2( 0.882164, 1 )
+
+[node name="Obstacle4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 510, 140 )
+scale = Vector2( 0.6, 1.22 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Obstacle5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 847, 403 )
+scale = Vector2( 1.11999, 1.06 )
+
+[node name="Obstacle6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 580, 427 )
+scale = Vector2( 1.16762, -1.07875 )
+
+[node name="Obstacle7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 219, 527 )
+rotation = 3.13235
+scale = Vector2( 0.574859, 0.854582 )
+
+[node name="Obstacle8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 835, 72 )
+rotation = 3.13223
+scale = Vector2( 0.6, 1.14035 )
+
+[node name="Obstacle9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 717, 296 )
+rotation = 1.56219
+scale = Vector2( 0.467634, -1.16836 )
+
+[node name="Obstacle10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 138, 80 )
+rotation = 3.21917
+
+[node name="Obstacle11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 767, 172 )
+scale = Vector2( 0.953442, 1.06443 )
+
+[node name="Obstacle12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 275, 217 )
+
+[node name="Obstacle13" parent="." instance=ExtResource( 1 )]
+position = Vector2( 111, 297 )
+scale = Vector2( 1.4701, 1.22438 )
+
+[node name="Obstacle15" parent="." instance=ExtResource( 1 )]
+position = Vector2( 562, 380 )
+rotation = 1.56219
+scale = Vector2( 0.467634, -1.16836 )
+
+[node name="Obstacle16" parent="." instance=ExtResource( 1 )]
+position = Vector2( 606, 208 )
+rotation = 1.56219
+scale = Vector2( 0.467634, -1.16836 )
+
+[node name="Obstacle17" parent="." instance=ExtResource( 1 )]
+position = Vector2( 345, 210 )
+rotation = 1.56219
+scale = Vector2( 0.467634, -1.16836 )
+
+[node name="Obstacle18" parent="." instance=ExtResource( 1 )]
+position = Vector2( 216, 198 )
+rotation = 1.56219
+scale = Vector2( 0.467634, -1.16836 )
+
+[node name="Obstacle19" parent="." instance=ExtResource( 1 )]
+position = Vector2( 191, 33 )
+rotation = 1.56219
+scale = Vector2( 0.467634, -1.16836 )
+
+[node name="Obstacle20" parent="." instance=ExtResource( 1 )]
+position = Vector2( 361, 21 )
+rotation = 1.56219
+scale = Vector2( 0.467634, -1.16836 )
+
+[node name="Obstacle21" parent="." instance=ExtResource( 1 )]
+position = Vector2( 541, 11 )
+rotation = 1.56219
+scale = Vector2( 0.467634, -1.16836 )
+
+[node name="Obstacle22" parent="." instance=ExtResource( 1 )]
+position = Vector2( 600, 340 )
+scale = Vector2( 1.16762, -1.07875 )
+
+[node name="Obstacle23" parent="." instance=ExtResource( 1 )]
+position = Vector2( 863, 260 )
+rotation = 1.56219
+scale = Vector2( 0.467634, -1.16836 )
+
+[node name="Obstacle24" parent="." instance=ExtResource( 1 )]
+position = Vector2( 947, 303 )
+scale = Vector2( 1.11999, 1.06 )
+
+[node name="Obstacle25" parent="." instance=ExtResource( 1 )]
+position = Vector2( 159, 505 )
+rotation = 1.56219
+scale = Vector2( 0.467634, -1.16836 )
+
+[node name="Obstacle26" parent="." instance=ExtResource( 1 )]
+position = Vector2( 143, 346 )
+rotation = 1.56219
+scale = Vector2( 0.603133, -1.17884 )
+
+[node name="Obstacle27" parent="." instance=ExtResource( 1 )]
+position = Vector2( 79.0001, 104 )
+rotation = 1.56219
+scale = Vector2( 0.467634, -1.16836 )
+
+[node name="Obstacle28" parent="." instance=ExtResource( 1 )]
+position = Vector2( 884, 41 )
+rotation = 1.56219
+scale = Vector2( 0.467634, -1.16836 )
+
+[node name="Obstacle29" parent="." instance=ExtResource( 1 )]
+position = Vector2( -5, 242 )
+rotation = 1.56219
+scale = Vector2( 3.7082, 0.99087 )
+
+[node name="Obstacle30" parent="." instance=ExtResource( 1 )]
+position = Vector2( 683, 37 )
+rotation = 1.56219
+scale = Vector2( 0.467634, -1.16836 )
+
+[node name="Obstacle31" parent="." instance=ExtResource( 1 )]
+position = Vector2( 376, 460 )
+rotation = 3.13235
+scale = Vector2( 0.6, 1.02293 )
+
+[node name="Obstacle32" parent="." instance=ExtResource( 1 )]
+position = Vector2( 314, 432 )
+rotation = 1.56219
+scale = Vector2( 0.467634, -1.16836 )
+
+[node name="Obstacle33" parent="." instance=ExtResource( 1 )]
+position = Vector2( 290, 114 )
+scale = Vector2( 0.6, 1.00561 )
+
+[node name="Obstacle34" parent="." instance=ExtResource( 1 )]
+position = Vector2( 132, 202 )
+rotation = 1.56219
+scale = Vector2( 0.467634, -1.16836 )
+
+[node name="Obstacle35" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1027, 264 )
+rotation = 1.56219
+scale = Vector2( 3.7082, -1.16836 )
+
+[node name="Obstacle36" parent="." instance=ExtResource( 1 )]
+position = Vector2( 315, -2 )
+scale = Vector2( 7.3082, 0.99087 )
+
+[node name="Obstacle37" parent="." instance=ExtResource( 1 )]
+position = Vector2( 401, 610 )
+scale = Vector2( 6.64234, -1.16836 )
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+position = Vector2( 4, -2 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="A59B735200362F91E6735B2Abcb787B2" type="Sprite" parent="."]
+process_priority = -1
+position = Vector2( 528, -183 )
+z_index = -1
+texture = ExtResource( 6 )
+offset = Vector2( 21, 464 )
+
+[node name="Rope" parent="." instance=ExtResource( 3 )]
+position = Vector2( 380, 548 )
+
+[node name="RedArea" type="Area2D" parent="."]
+position = Vector2( 865, 16 )
+
+[node name="ColorRect" type="ColorRect" parent="RedArea"]
+margin_left = -36.0
+margin_top = -9.0
+margin_right = 4.0
+margin_bottom = 50.0
+color = Color( 1, 0.313726, 0.313726, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RedArea"]
+position = Vector2( -18, 20 )
+shape = SubResource( 1 )
+
+[node name="BlueArea" type="Area2D" parent="."]
+position = Vector2( 865, 16 )
+
+[node name="ColorRect" type="ColorRect" parent="BlueArea"]
+margin_left = -730.0
+margin_top = -9.0
+margin_right = -682.0
+margin_bottom = 62.0
+color = Color( 0, 0.25098, 0.996078, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlueArea"]
+position = Vector2( -711, 25.5 )
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="RedArea" to="." method="_on_RedArea_body_entered"]
+[connection signal="body_entered" from="BlueArea" to="." method="_on_BlueArea_body_entered"]
+
+[editable path="Player"]
